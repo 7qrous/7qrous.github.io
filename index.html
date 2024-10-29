@@ -9,6 +9,7 @@
         * {
             margin: 0;
             padding: 0;
+            font-family: 'consolas';
         }
 
         html,
@@ -24,6 +25,8 @@
             font-family: sans-serif;
             font-weight: 900;
         }
+
+
 
         hr {
             border: 1px solid white;
@@ -42,32 +45,84 @@
             left: 50%;
             transform: translate(-50%, 0%);
             position: absolute;
+            border-bottom: 1px solid white;
         }
 
         li {
             list-style-type: none;
             display: block;
-            text-align: right;
+        }
+
+        .ico-container {
+            position: absolute;
+            right: 5px;
+            top: 0;
+        }
+
+        ul {
+            top: 25px;
+            left: 5px;
+            position: absolute;
+        }
+
+        .panel {
+            height: 25px;
+            width: 100%;
+            border-bottom: 1px solid white;
+            background-color: blue;
+        }
+
+        #root {
+            border: 3px solid white;
+        }
+
+        .input {
+            width: 100%;
+            background-color: black;
+            border: 0;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            left: 0;
+            border: 0;
+        }
+
+        .input:focus {
+            outline: none;
+        }
+
+        a,
+        a:hover,
+        a:visited,
+        a:active {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <div id="root">
-        <span class="ico-container">
-            <span class="ico">□</span>
-            <span class="ico">X</span>
-            <span class="ico">__</span>
-        </span>
-        <span class="title">
-            7qrous.github.io
-        </span>
-        <hr>
+        <div class="panel">
+            <span class="ico-container">
+                <span class="ico">□</span>
+                <span class="ico">X</span>
+                <span class="ico">__</span>
+            </span>
+            <span class="title">
+                7qrous.github.io
+            </span>
+        </div>
         <ul>
-            <li>- test</li>
-            <li>- java</li>
+            <li>&nbsp;</li>
+            <li><a href="https://github.com/7qrous/test">- test</a></li>
+            <li><a href="https://github.com/7qrous/java">- java</a></li>
+            <li><a href="https://7qrous.tistory.com">- tistory</a></li>
         </ul>
     </div>
+    <style>
+
+    </style>
 </body>
 
 </html>
